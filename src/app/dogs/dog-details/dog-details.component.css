@@ -1,0 +1,34 @@
+.card__wrapper {
+    grid-column: col 3 / span 2;
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__image {
+    height: auto;
+    width: 200px;
+} 
+
+.button__primary, .card__image {
+    grid-column: 1;
+}
+
+.button__primary {
+    text-decoration: none;
+    text-align: center
+}
+
+.breed {
+    display: flex;
+    background: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.selected {
+    background: wheat;
+    align-items: center;
+    justify-content: center;
+}

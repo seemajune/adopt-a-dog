@@ -1,0 +1,12 @@
+<div *ngFor="let dog of dogs$| async" class="card__wrapper">
+    <div class="breed" 
+        (click)="selectDog(dog)"
+        [class.selected]="isSelected(dog)">
+        <p>{{dog.breed}}<p>
+    </div>
+    <div *ngIf="isSelected(dog)">
+        <app-dog-details 
+            [dog]="dog">
+        </app-dog-details>
+    </div>
+</div>

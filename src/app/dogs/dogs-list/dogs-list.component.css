@@ -1,0 +1,23 @@
+.active-link {
+    background: wheat;
+}
+
+.dogs__list__title {
+    justify-content: flex-end;
+}
+
+.dogs__list__items {
+    list-style: none;
+}
+
+.dogs__list__item {
+    padding-right: 10px;
+}
+
+.dogs__list__title, .dogs__list__items {
+    display: inline-flex;
+}
+
+.dogs__list__items a {
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+* {
+    font-family: 'Helvetica', sans-serif;
+}
+
+h1.title {
+    font-size: 1.5em;
+    display: inline-flex;
+}
+
+.container {
+    margin: 40px;
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(2, [col] auto ) ;
+        grid-template-rows: repeat(2, [row] auto  );
+        background-color: #fff;
+        color: #444;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.navbar__item a {
+   padding-right: 10px;
+   text-decoration: none;
+} 
+

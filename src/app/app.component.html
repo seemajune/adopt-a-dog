@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="title">
+  {{title}}
+  </h1>
+
+  <ul class="navbar">
+    <li class="navbar__item"><a routerLink="/dogs">DOGS</a></li>
+    <li class="navbar__item"><a routerLink="">HOME</a></li>
+  </ul>
+
+  <div class="dogs__list">
+    <div [@routerTransition]="getState(o)">
+      <router-outlet #o="outlet"></router-outlet>
+    </div>
+  </div>
+</div>

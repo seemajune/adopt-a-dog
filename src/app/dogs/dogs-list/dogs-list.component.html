@@ -1,0 +1,8 @@
+  <p class="dogs__list__title">select size of breed</p>
+  <ul class="dogs__list__items">
+    <li *ngFor="let dog of dogs$ | async" class="dogs__list__item">
+        <a [routerLink]="dog.size" routerLinkActive="active-link">{{dog.size}}</a>
+    </li>
+  </ul>
+
+<router-outlet></router-outlet>
